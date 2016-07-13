@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nalas Shower</title>
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+  </head>
+  <body>
+    <header class="flex-center">
+      <div class="nav-wrapper menu">
+        <div id="shower" class="btn"><a href="#shower-section"><img src="assets/img/baby.png"><span>Shower</span></a></div>
+        <div id="registry-btn" class="btn"><a><img src="assets/img/gift.png"><span>Registry</span></a></div>
+      </div>
+      <div id="count-down"><span class="days"></span><span class="fancy-font little">Days</span><span class="hours"></span><span class="fancy-font little"> Hours</span><span class="minutes"></span><span class="fancy-font little"> Minutes</span><span class="seconds"></span><span class="fancy-font little"> Seconds until Nala's arrival</span>
+      </div>
+      <div class="nav-wrapper menu">
+        <div id="photo-btn" class="btn"><a href="#pictures"><img src="assets/img/camera.png"><span>Pictures</span></a></div>
+        <div id="guess-btn" class="btn"><a href="#guess"><img src="assets/img/calendar.png"><span>Guess</span></a></div>
+        <div id="comments-btn" class="btn"><a href="#comments"><img src="assets/img/comments.png"><span>Tips</span></a></div>
+      </div>
+      <button id="btn-drop"><span></span></button>
+    </header>
+    <div id="drop-down-menu" class="menu">
+      <div id="shower" class="btn"><a href="#shower-section"><img src="assets/img/baby.png"><span>Shower</span></a></div>
+      <div id="registry-btn-drop" class="btn"><a><img src="assets/img/gift.png"><span>Registry</span></a></div>
+      <div id="photo-btn" class="btn"><a href="#pictures"><img src="assets/img/camera.png"><span>Pictures</span></a></div>
+      <div id="guess-btn" class="btn"><a href="#guess"><img src="assets/img/calendar.png"><span>Guess</span></a></div>
+      <div id="comments-btn" class="btn"><a href="#comments"><img src="assets/img/comments.png"><span>Tips</span></a></div>
+    </div>
+    <main id="page-wrapper">
+      <section id="slide-show-wrapper" class="col-full">
+        <div id="welcome-message">
+          <p> We're having a baby!! We are ecstatic to bring baby Nala into the world and become parents to our little princess! We have been blessed to have a village that has been truly amazing from dating, to engagement, to marriage, and now on the verge of Parenthood.  You all have given us encouragement, advice, tools for the future, and above all love.  We want to say thank you for the love and support you have given us!! </p>
+        </div><img src="assets/img/slideshow/sunshine.jpg" alt="sunshine" style="display:none" class="slide"><img src="assets/img/slideshow/hands-smile.jpg" style="display:none" class="slide"><img src="assets/img/slideshow/bee-sign.jpg" class="slide">
+        <div id="slider-wrapper">
+          <ul id="slider">
+            <li class="slider-item"></li>
+            <li class="slider-item"></li>
+            <li class="slider-item"></li>
+          </ul>
+        </div>
+      </section>
+      <section id="info-page-wrapper">
+        <div id="shower-section">
+          <div class="heading">When and Where?
+            <div id="location">
+              <address>
+                <p>2454 Pine Hollow Dr.</p>
+                <p>East Lansing, MI 48823</p>
+                <p>Saturday July 30, 2016</p>
+                <p>4:30pm - 7:00pm </p>
+              </address>
+            </div>
+          </div>
+          <div id="rsvp">
+            <form role="form" name="rsvp" method="POST">
+              <input id="guest_name" name="guest_name" type="name" placeholder="Name" class="rsvp-form">
+              <input id="attending" name="attending" type="text" placeholder="Attending: Yes or No?" class="rsvp-form">
+              <input id="guest" name="guest" type="number" placeholder="How Many?" class="rsvp-form">
+              <input id="rsvp-submit" type="submit" value="RSVP" class="btn-submit">
+            </form>
+          </div>
+        </div>
+        <div id="last-row" class="flex-center">
+          <div id="registry-info-main">
+            <p class="heading">Registry Info</p>
+            <p>Registered at Baby's R Us</p>
+            <p>	Bianca McCastle</p>
+            <p>Registry number: 581588428</p><a href="https://www.toysrus.com/registry/link/index.jsp?overrideStore=TRUS&amp;registryNumber=58158428" target="_blank" class="btn">Registry</a>
+          </div>
+          <div id="guess" class="col-1">
+            <p class="heading">Guess the Date?</p>
+            <p id="guess-intro">Are you the pregnancy "Guru"? Well it's time to show and prove!  Fill out the form below to submit your prediction for Nala's delivery date and weight!!!</p>
+            <p>Due Date: August 23, 2016</p>
+            <form role="form" name="guess" method="POST">
+              <input id="weight-name" type="text" name="fName" placeholder="Name" class="guess-form">
+              <input id="weight" type="text" name="weight" placeholder="Weight ex: 7lbs 8oz" class="guess-form">
+              <input id="gdate" type="Date" name="gdate" class="guess-form">
+              <input id="guess-submit" type="submit" value="Submit" class="btn-submit">
+            </form>
+          </div>
+          <div id="pictures" class="col-1">
+            <p class="heading">Gallery</p>
+            <div id="gallery-wrapper">
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/lzjinaskv/MG_2611_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/6fc4wrigf/MG_2617_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/meusgbei7/MG_2625_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/a1hy9eotr/MG_2628_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/y6inr494f/MG_2633_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/9ej1jvrxr/MG_2636_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/w4i6cvb5b/MG_2642_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/5kplaqalr/MG_2669_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/6bibgicz3/MG_2672_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/oflc15anj/MG_2674_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/7ggyzmotr/MG_2678_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/p7sle348f/MG_2686_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/ytm5udve7/MG_2688_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/xslx59een/MG_2690_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/bupgbgze7/MG_2695_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/67t3dzwvj/MG_2696_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/hlfmp77e7/MG_2697_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/rwrzhuz3j/MG_2700_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/4wlc5j19r/MG_2706_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/3vl3geka7/MG_2709_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/5c17cackv/MG_2711_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/fam5yrm0f/MG_2716_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/3zjiaef5b/MG_2729_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/65dt4wilr/MG_2730_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/3pbzr20j3/MG_2731_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/xiizznp67/MG_2734_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/5wg8ez5tb/MG_2735_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/ip4cewhf3/MG_2736_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/orbz5e5v3/MG_2738_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/7s30q4unj/MG_2740_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/b0c3gx6b3/MG_2742_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/n3hf4hhdb/MG_2745_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+              <div class="gall-img-wrapper"><img src="https://s25.postimg.org/wqkxe7acv/MG_2748_Bianca_Marcell_Maternity.jpg" class="gall-img"></div>
+            </div>
+          </div>
+          <div id="comments" class="col-1">
+            <p class="heading">Tips for the Parents</p>
+            <p>Now as we venture into parenthood please keep the advice rolling in below lol.</p>
+            <div id="comment-wall">
+              <p class="posted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="posted-author">Marcell</p>
+              <hr>
+              <p class="posted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="posted-author">Bianca</p>
+            </div>
+            <form id="comment-form" role="form" name="comment" method="POST">
+              <input id="author-name" name="author-name" type="name" placeholder="Name" class="comment-form">
+              <textarea id="comment-message" name="comment" type="text" placeholder="Comment" rows="8" cols="80" class="comment-form"></textarea>
+              <input id="comment-submit" type="submit" value="Post" class="btn-submit">
+            </form>
+          </div>
+        </div>
+      </section>
+      <div id="overlay">
+        <div id="modal"><span id="close-modal"><img src="assets/img/icon/close-btn.png"></span><img id="modal-img"></div>
+      </div>
+      <div id="overlay-reg">
+        <div id="modal-reg"><span id="close-modal-reg"><img src="assets/img/icon/close-btn.png"></span>
+          <div id="registry-info">
+            <p class="heading">Registry Info</p>
+            <p>Registered at Baby's R Us</p>
+            <p>	Bianca McCastle</p>
+            <p>Registry number: 581588428</p><a href="https://www.toysrus.com/registry/link/index.jsp?overrideStore=TRUS&amp;registryNumber=58158428" target="_blank" class="btn">Registry</a>
+          </div>
+        </div>
+      </div>
+      <div id="overlay-rsvp">
+        <div id="modal-rsvp"><span id="close-modal-rsvp"><img src="assets/img/icon/close-btn.png"></span>
+          <div id="confirm">
+            <p>Confirmed Thank You!!!!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/main-dist.js"> </script>
+  </body>
+</html>
