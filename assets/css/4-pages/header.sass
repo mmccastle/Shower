@@ -1,0 +1,172 @@
+.little
+	font-size: 1.5vw !important
+	margin: auto 10px auto 2px !important
+
+	@media (max-width: 640px)
+		font-size: 2.8vw !important
+
+header
+	height: 60px
+	width: 100%
+	background: $pink
+
+.menu img
+	width: 20px
+	height: 20px
+
+.menu div
+	width: 60px
+	height: 60px
+
+.nav-wrapper
+	display: flex
+	justify-content: center
+	width: 25%
+
+	@media (max-width: 767px)
+		display: none
+
+.btn
+	margin: 0 0.50vw
+	width: 60px
+
+.btn a
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	width: 50px
+	height: 60px
+
+
+	&:link,
+	&:visited
+		color: #000
+		text-decoration: none
+
+	&:hover
+		cursor: pointer
+		background: white
+		box-shadow: 5px 5px 10px #000
+
+	&:active
+		box-shadow: 5px 5px 10px #000
+
+
+#comments-btn a
+	width: 40px
+
+
+
+#count-down
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 0
+	width: 60%
+
+	@media (max-width: 769px)
+		width: 100%
+
+	@media (max-width: 640px)
+		justify-content: flex-start
+
+#count-down span
+	margin: 0 2px
+	font-size: 1.75vw
+
+	@media (max-width: 767px)
+		font-size: 3vw
+
+//Drop down menu button
+#btn-drop
+	position: relative
+	top: 4px
+	right: 9px
+	width: 30px
+	height: 30px
+	visibility: collapse
+	background: none
+	border: none
+	display: flex
+	align-items: center
+	padding: 0
+
+	&:focus
+		outline: none
+
+	span,
+	span:before,
+	span:after
+		content: ""
+		padding: 0
+		height: 1px
+		background: #000
+		display: block
+		position: relative
+
+	span:before
+		bottom: 11px
+	span:after
+		top: 10px
+
+	@media (max-width: 767px)
+		display: block
+		visibility: visible
+
+
+
+// menu button animation
+#btn-drop.menu-displayed
+	transform: rotate(90deg)
+	span
+		background: transparent
+	span:before
+		width: 110%
+		transform-origin: center
+		transform: rotate(-45deg)
+		transition: all 1s
+	span:after
+		width: 110%
+		transform-origin: center
+		transform: rotate(45deg)
+		transition: all 1s
+
+
+	@media (max-width: 320px)
+		margin-left: 5px
+
+
+
+
+#drop-down-menu
+	width: 100%
+	height: 0
+	overflow: hidden
+	display: flex
+	justify-content: space-around
+	background: pink
+	transition: all 1s
+
+	.btn
+		margin: 0 0.5vw
+
+		@media (max-width: 400px)
+			margin: 0
+
+			span
+				font-size: 4.5vw
+
+		@media (max-width: 320px)
+			margin: 0
+
+			a
+				width: 40px
+			span
+				font-size: 3.5vw
+
+#drop-down-menu.menu.menu-displayed
+
+	@media (max-width: 767px)
+		height: 60px
+		transition: all 1s

@@ -1,0 +1,379 @@
+#info-page-wrapper
+	padding: 0
+	font-weight: bold
+	font-size: 18px
+
+	@media (min-width: 640px )
+		display: block
+
+	@media (max-width: 768px)
+		height: auto
+
+#shower-section
+	width: 100%
+	max-height: 800px
+	background: url(../img/vintage-roses.jpg) no-repeat center center
+		size: 100% 100%
+	padding: 10px 0px
+	text-align: center
+	color: #fff
+	display: flex
+	flex-direction: rows
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+
+	.heading
+		width: 100%
+		margin-bottom: 40px
+
+
+	@media (max-width: 768px)
+		width: 100%
+		height: auto
+
+	address
+		margin-bottom: 20px
+
+#location
+	display: inline-block
+	width: 40%
+	height: auto
+	white-space: normal
+
+	address
+		font-size: 3vw
+
+	@media (max-width: 767px)
+		display: block
+		width: 100%
+		height: auto
+
+
+		address
+			font-size: 5vw
+
+#rsvp
+ display: inline-block
+ width: 40%
+
+ @media (max-width: 767px)
+	 display: block
+	 width: 250px
+	 height: auto
+	 margin: 0 auto
+
+.rsvp-form
+	width: 250px
+	padding: 10px 10px
+	margin: 25px auto
+	border-radius: 3px
+	border: 1px solid #000
+	display: block
+	color: black
+
+	&:focus
+		box-shadow: inset 0 0 2px #000
+
+#rsvp-submit
+	border: 1px solid #fff
+	background: pink
+
+
+#pictures
+	background: url(../img/sand_green.jpg) no-repeat center center
+		size: 100% 100%
+	overflow: hidden
+
+	.heading
+		margin: 10px auto 40px auto
+
+		@media (min-width: 1440px )
+			margin-bottom: 150px
+
+#gallery-wrapper
+	display: flex
+	justify-content: center
+	flex-direction: rows
+	flex-wrap: wrap
+
+#gallery-wrapper img
+	max-height: 100px
+	max-width: 100px
+	margin: 10px 5px
+
+
+	&:hover
+		opacity: 0.4
+		cursor: pointer
+
+.gall-img-wrapper
+	display: flex
+	width: 60px
+	height: 100px
+	overflow: hidden
+
+#guess
+	background: url(../img/sand_pink.jpg) no-repeat center center
+		size: 100% 100%
+	padding: 10px 0px
+
+	.heading
+		margin: 0 auto 40px auto
+
+		@media (min-width: 1440px )
+			margin-bottom: 150px
+
+	p
+		padding: 0px 20px
+
+	form
+		.btn-submit
+			border: 1px solid #000
+
+.guess-form
+	display: block
+	width: 250px
+	padding: 10px 10px
+	margin: 10px auto
+	border-radius: 3px
+	border: 1px solid #000
+	color: #000
+
+	&:focus
+		box-shadow: inset 0 0 2px #000
+
+	@media (min-width: 770px) and (max-width: 830px)
+		width: 90%
+
+
+
+#comments
+	background: url(../img/sand_pink.jpg) no-repeat center center
+		size: 100% 100%
+	padding: 10px 0px
+
+	form
+		margin-top: 30px
+
+	.heading
+		margin-bottom: 40px
+
+		@media (min-width: 1440px )
+			margin-bottom: 150px
+
+	p
+		width: 95%
+		margin: 0px auto
+
+#comment-wall
+	width: 100%
+	max-height: 300px
+	overflow-x: hidden
+	overflow-y: auto
+	margin: 10px auto
+
+	form
+		margin: 5px auto
+		display: block
+
+.comment-form
+	display: block
+	width: 250px
+	padding: 10px 10px
+	margin: 10px auto
+	border-radius: 3px
+	border: 1px solid #000
+	color: #000
+
+	&:focus
+		box-shadow: inset 0 0 2px #000
+
+	@media (min-width: 770px) and (max-width: 830px)
+		width: 90%
+
+#comment-submit
+	border: 1px solid #000
+	border-radius: 3px
+
+.heading
+	font-family: Papyrus, fantasy
+	height: 40px
+	width: auto
+	font:
+		size: 3vw
+		weight: bold
+	text-align: center
+
+	@media (max-width: 768px)
+		font-size: 7vw
+
+
+
+.btn-submit
+	width: 273px
+	height: 30px
+	display: block
+	background: none
+	border-radius: 2px
+	margin: 10px auto
+	padding: 1px 10px
+
+#overlay
+	position: fixed
+	z-index: 999
+	background: fade-out(#000, 0.05)
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	overflow: auto
+	opacity: 0.0
+	pointer-events: none
+	display: flex
+	align-items: center
+	transition: all ease-in-out 300ms
+
+#close-modal img
+	height: 20px
+	width: 20px
+	left: 90%
+	bottom: 10px
+	position: relative
+	cursor: pointer
+
+#modal
+	margin: auto
+
+#modal-img
+	max-height: 80%
+	max-width: 80%
+	margin: 0px auto
+	display: block
+
+#overlay-reg
+	position: fixed
+	z-index: 999
+	background: fade-out(#000, 0.05)
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	overflow: auto
+	opacity: 0.0
+	pointer-events: none
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all ease-in-out 300ms
+
+	#close-modal-reg img
+		position: relative
+		left: 95%
+		width: 20px
+		height: 20px
+		margin-bottom: 10px
+		z-index: 999
+		cursor: pointer
+
+	#registry-info
+		background: #fff
+		border: 1px solid #000
+		width: 300px
+		height: 300px
+		padding: 20px
+		border-radius: 10px
+
+		.heading
+			font-size: 2vw
+
+		@media (max-width: 320px)
+			width: 250px
+
+		.heading
+			@media (max-width: 768px)
+				font-size: 4vw
+
+		a
+			display: block
+			background: $blue
+			color: white
+			width: 80px
+			margin: 15px 0px
+			padding: 10px
+			border-radius: 10px
+			text-align: center
+
+			&:link,
+			&:hover,
+			&visted,
+			&:active
+				text-decoration: none
+
+#registry-info-main
+	display:none
+	background: url(../img/sand_green.jpg) no-repeat center center
+		size: 100% 100%
+	padding: 20px
+	text-align: center
+
+	a
+		display: block
+		background: $blue
+		color: white
+		width: 80px
+		margin: 15px auto
+		padding: 10px
+		border-radius: 10px
+		text-align: center
+
+		&:link,
+		&:hover,
+		&visted,
+		&:active
+			text-decoration: none
+
+
+	@media (max-width: 768px)
+		display: block
+
+#overlay-rsvp
+	position: fixed
+	z-index: 999
+	background: fade-out(#000, 0.05)
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	opacity: 0.0
+	overflow: auto
+	pointer-events: none
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all ease-in-out 300ms
+
+	#confirm
+		height: auto
+		width: auto
+		display: flex
+		padding: 10px
+		font-size: 2vw
+		background: #fff
+		border-radius: 10px
+
+#close-modal-rsvp img
+	height: 20px
+	width: 20px
+	position: relative
+	left: 21vw
+
+.posted
+	height: auto
+	padding: 10px
+	font-size: 20px
+
+.posted-author
+	color: #000
+	font-size: 14px
+	padding: 10px 10px 10px 25px
